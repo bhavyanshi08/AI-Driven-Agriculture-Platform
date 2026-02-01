@@ -12,7 +12,9 @@
 
 ## 🎯 Overview
 
-AgriTech AI Platform is a **production-ready, full-stack application** that empowers India's 120+ million farmers with AI-powered tools for smarter farming decisions. The platform combines machine learning, time series forecasting, and generative AI to deliver four critical services:
+In modern agriculture, farmers face a major challenge in selecting the right crop because soil conditions, weather patterns, and market prices constantly change. Farming depends on many variables such as soil nutrients, rainfall, humidity, pest alerts, and yield trends, but farmers usually don’t have access to a single integrated system that combines all this information. Because of this, crop selection is often based on guesswork instead of scientific analysis, leading to low productivity, crop failure, and financial loss. Even when farmers get good harvests, unpredictable market prices reduce their profit, increasing uncertainty in agriculture.
+To solve this problem, we developed an AI-based crop recommendation and decision support platform. The system collects soil and environmental data such as nitrogen, phosphorus, potassium, pH level, humidity, and rainfall, and processes it using machine learning models trained on agricultural datasets. Based on this analysis, the platform recommends suitable crops and predicts yield and price trends. It also provides market analytics, live alerts, and an AI assistant to guide farmers in real time. This converts raw agricultural data into actionable insights and replaces guesswork with scientific decision-making. By using this system, farmers can reduce risk, increase productivity, and improve income, while governments can use analytics for better planning. Overall, our platform promotes smarter and more sustainable agriculture.
+The platform combines machine learning, time series forecasting, and generative AI to deliver four critical services:
 
 1. **🌱 Crop Recommendation System** - ML-based crop suggestions
 2. **📈 Commodity Price Prediction** - Time series price forecasting
@@ -20,6 +22,45 @@ AgriTech AI Platform is a **production-ready, full-stack application** that empo
 4. **📊 Government Analytics Dashboard** - Policy intervention tools
 
 ---
+## architecture diagram
+┌────────────────────┐
+│   User / Farmer    │
+│ (Web Application)  │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│   Frontend (UI)    │
+│ React + Tailwind   │
+│ - Input soil data  │
+│ - View results     │
+│ - Chat with AI     │
+└─────────┬──────────┘
+          │  REST API Requests
+          ▼
+┌────────────────────────────┐
+│      Backend Server        │
+│     Python + FastAPI       │
+│ - Handles requests        │
+│ - Data validation         │
+│ - API logic               │
+└─────────┬─────────┬────────┘
+          │         │
+          ▼         ▼
+┌────────────────┐  ┌─────────────────────┐
+│ ML Models      │  │ AI Assistant        │
+│ - Crop Rec.    │  │ (Gemini API)        │
+│ - Yield Pred.  │  │ - Farmer guidance  │
+│ - Price Trend  │  │ - Q&A support      │
+└─────────┬──────┘  └─────────┬───────────┘
+          │                   │
+          ▼                   ▼
+┌────────────────────────────────┐
+│   Agricultural Datasets        │
+│ - Soil data                    │
+│ - Weather data                 │
+│ - Historical yield & prices    │
+└────────────────────────────────┘
 
 ## ✨ Key Features
 
@@ -380,6 +421,9 @@ See [JUDGES_CHECKLIST.md](./JUDGES_CHECKLIST.md) for:
 - 🏛️ Targeted government interventions
 
 ---
+## Prompt Strategy Summary
+
+The AI assistant uses well-structured prompts to give clear and practical farming advice. User inputs like soil data, weather conditions, and questions are combined with simple instructions that define the AI’s role as an agriculture expert. Prompts are kept focused so the responses are relevant, easy to understand, and useful for real-world farming decisions. This approach helps reduce incorrect answers and turns raw data into actionable insights.
 
 ## 🎉 Project Status
 
@@ -410,14 +454,6 @@ See [JUDGES_CHECKLIST.md](./JUDGES_CHECKLIST.md) for:
 
 ---
 
-## Quick Links
+ 
 
-- 📖 [Read Full Documentation](./PROJECT_DOCUMENTATION.md)
-- 🚀 [Quick Start Guide](./QUICK_START.md)
-- 📡 [API Specifications](./API_CONTRACT.md)
-- 🏆 [Judges Checklist](./JUDGES_CHECKLIST.md)
-- 📝 [Project Summary](./PROJECT_SUMMARY.md)
 
----
-
-**⭐ Star this project if you find it useful!**
