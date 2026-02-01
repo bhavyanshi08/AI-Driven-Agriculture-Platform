@@ -1,0 +1,55 @@
+"""
+SAMPLE PRICE TRAINING DATA
+Historical commodity prices for prediction model
+
+Format: date, commodity_name, price, market, state, arrival_quantity
+
+This is sample data. For production, use:
+- AGMARKNET data (agmarknet.gov.in)
+- e-NAM portal data
+- State agricultural marketing boards
+"""
+
+date,commodity_name,price,market,state,arrival_quantity,min_price,max_price
+2024-01-01,Rice,2800,Delhi,Delhi,1500,2750,2850
+2024-01-02,Rice,2820,Delhi,Delhi,1450,2800,2840
+2024-01-03,Rice,2810,Delhi,Delhi,1520,2790,2830
+2024-01-04,Rice,2850,Delhi,Delhi,1400,2830,2870
+2024-01-05,Rice,2830,Delhi,Delhi,1480,2810,2850
+2024-01-06,Rice,2840,Delhi,Delhi,1510,2820,2860
+2024-01-07,Rice,2860,Delhi,Delhi,1380,2840,2880
+2024-01-01,Wheat,2100,Punjab,Punjab,2000,2080,2120
+2024-01-02,Wheat,2110,Punjab,Punjab,1980,2090,2130
+2024-01-03,Wheat,2120,Punjab,Punjab,2050,2100,2140
+2024-01-04,Wheat,2105,Punjab,Punjab,2020,2085,2125
+2024-01-05,Wheat,2115,Punjab,Punjab,1990,2095,2135
+2024-01-06,Wheat,2130,Punjab,Punjab,2100,2110,2150
+2024-01-07,Wheat,2125,Punjab,Punjab,2030,2105,2145
+2024-01-01,Onion,2000,Nashik,Maharashtra,3000,1950,2050
+2024-01-02,Onion,2100,Nashik,Maharashtra,2800,2050,2150
+2024-01-03,Onion,2200,Nashik,Maharashtra,2600,2150,2250
+2024-01-04,Onion,2300,Nashik,Maharashtra,2400,2250,2350
+2024-01-05,Onion,2400,Nashik,Maharashtra,2200,2350,2450
+2024-01-06,Onion,2500,Nashik,Maharashtra,2000,2450,2550
+2024-01-07,Onion,2600,Nashik,Maharashtra,1800,2550,2650
+2024-01-01,Tomato,1500,Bangalore,Karnataka,1200,1450,1550
+2024-01-02,Tomato,1520,Bangalore,Karnataka,1180,1470,1570
+2024-01-03,Tomato,1480,Bangalore,Karnataka,1220,1430,1530
+2024-01-04,Tomato,1550,Bangalore,Karnataka,1150,1500,1600
+2024-01-05,Tomato,1530,Bangalore,Karnataka,1190,1480,1580
+2024-01-06,Tomato,1560,Bangalore,Karnataka,1160,1510,1610
+2024-01-07,Tomato,1540,Bangalore,Karnataka,1200,1490,1590
+2024-01-01,Cotton,5500,Gujarat,Gujarat,800,5450,5550
+2024-01-02,Cotton,5520,Gujarat,Gujarat,780,5470,5570
+2024-01-03,Cotton,5540,Gujarat,Gujarat,820,5490,5590
+2024-01-04,Cotton,5510,Gujarat,Gujarat,790,5460,5560
+2024-01-05,Cotton,5530,Gujarat,Gujarat,810,5480,5580
+2024-01-06,Cotton,5550,Gujarat,Gujarat,770,5500,5600
+2024-01-07,Cotton,5560,Gujarat,Gujarat,800,5510,5610
+2024-01-01,Potato,1200,Agra,UttarPradesh,2500,1180,1220
+2024-01-02,Potato,1180,Agra,UttarPradesh,2600,1160,1200
+2024-01-03,Potato,1220,Agra,UttarPradesh,2400,1200,1240
+2024-01-04,Potato,1210,Agra,UttarPradesh,2450,1190,1230
+2024-01-05,Potato,1190,Agra,UttarPradesh,2550,1170,1210
+2024-01-06,Potato,1230,Agra,UttarPradesh,2350,1210,1250
+2024-01-07,Potato,1220,Agra,UttarPradesh,2400,1200,1240
